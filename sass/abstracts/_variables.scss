@@ -1,0 +1,26 @@
+//COLORS 
+:root {
+    --primary-color: #F74949;
+    --secondary-color: #4A4A4A;
+    --hamburger-menu-color: #F74949;
+    --background-color: #FFF;
+    --font-color: #FFF;
+    --color-black: #1f1f1f;
+    --dark-gray: #4A4A4A;
+    --color-gray: #888888;
+    --light-gray: #B1B1B1;
+    --really-light-gray: #F4F4F4;
+
+
+    //FONT  
+    --default-font-size: 1.6rem;
+}
+
+
+@mixin desktop {
+    @media(min-width: 1026px) {
+        @content
+    }
+}
+
+;

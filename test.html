@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        color: white;
+        z-index: 50;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+    }
+
+    .bottom h3 {
+        font-weight: 300;
+    }
+
+    body {
+        margin: 0;
+        background: #b8b89c;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    div[class^="slide"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        left: 100vw;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        position: absolute;
+    }
+
+    .slide1 {
+        background: #FF6961;
+        color: white;
+    }
+
+    .slide1 img {
+        height: 30px;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+    }
+
+    .slide1 .img2 {
+        height: 30px;
+        margin-top: 40px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+    }
+
+    .slide1 h2 {
+        margin: -20px;
+        color: #ae4742;
+    }
+
+    .slide2 {
+        background: #FDFD96;
+        color: #b2b26d;
+    }
+
+    .slide3 {
+        background: #77DD77;
+        color: #519651;
+    }
+
+    .slide4 {
+        background: #779ECB;
+        color: #536f90;
+    }
+
+    .slide5 {
+        background: #FFD1DC;
+        color: #b49098;
+    }
+</style>
+
+<body>
+
+
+    <div class="slide1 slide">
+        <h1>REALLY COOL SLIDER</h1>
+        <h2>just scroll to try it</h2>
+    </div>
+    <div class="slide2 slide">
+        <h1>2</h1>
+    </div>
+    <div class="slide3 slide">
+        <h1>3</h1>
+    </div>
+    <div class="slide4 slide">
+        <h1>4</h1>
+    </div>
+    <div class="slide5 slide">
+        <h1>5</h1>
+    </div>
+    <div class="controls">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+</body>
+<script src="js/test.js">
+</script>
+
+</html>

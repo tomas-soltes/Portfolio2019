@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>Tomas Soltes - Portfolio 2019</title>
+</head>
+
+<body>
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <div class="container container-about">
+
+                <a href="index.html" class="logo">
+                    <img src="img/logo/logo-red.png" alt="logo">
+                </a>
+
+                <div class="menu">
+                    <div class="menu__hamburger">
+                        <span></span>
+                    </div>
+
+                    <nav class="menu__content">
+                        <div class="switcher">
+                            <input type="checkbox" id="switch">
+                            <label for="switch">
+                                <div class="toggle"></div>
+                                <div class="names">
+                                    <p class="light">Light</p>
+                                    <p class="dark">Dark</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="menu__content--nav">
+                            <ul>
+                                <li><a href="./" onclick="goBackTo(1)">Home</a></li>
+                                <li><a href="./" onclick="goBackTo(3)">Work</a></li>
+                                <li><a href="about.html" onclick="toggleMenu()">About me</a></li>
+                                <li><a href="./" onclick="goBackTo(8)">Contact</a></li>
+                            </ul>
+
+                            <div class="some">
+                                <a><img src="img/icons/social/linkedin-white.png" alt="linkedin"></a>
+                                <a href=""><img src="img/icons/social/facebook-white.png" alt="facebook"></a>
+                                <a href=""><img src="img/icons/social/instagram-white.png" alt="instagram"></a>
+                                <a href=""><img src="img/icons/social/github-white.png" alt="github"></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+
+                <div class="sections">
+
+                    <div class="intro">
+                        <div class="intro__heading">
+                            <h1>Hi,<br>I'm Tomas</h1>
+                            <p>I'm a web designer / developer based in Copenhagen.
+                                I have a passion for web design and love to
+                                create for web and mobile devices.</p>
+                        </div>
+                        <div class="intro__images">
+                            <img src="img/slide-2/shape.png" alt="shape">
+                            <img src="img/slide-2/profile.png" alt="profile">
+                        </div>
+                        <a class="intro__btn" onclick="goBackTo(2)" href="./">
+                            <div class="cta_btn">Download my resume</div>
+                        </a>
+                        <div class='icon-scroll'></div>
+                    </div>
+
+
+                    <section id="scrollIntoView" class="sections--1 section">
+                        <div class="section__heading">
+                            <h2>About me</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="section__main aboutMe">
+                            <div>
+                                <div class="aboutMe__info">
+                                    <div class="aboutMe__info--left">
+                                        <li>Name</li>
+                                        <li>Birthday</li>
+                                        <li>Email</li>
+                                        <li>Mobile</li>
+                                        <li>Address</li>
+                                    </div>
+                                    <div class="aboutMe__info--right">
+                                        <li>Tomas Soltes</li>
+                                        <li>25.12.2998</li>
+                                        <li>tomas.soltes98@gmail.com</li>
+                                        <li>+45 8191 0914</li>
+                                        <li>Robert Jacobsens Vej 65, 502</li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="aboutMe__text">An ambitious and self-motivated person who has a keen interest
+                                    in all
+                                    things related to design. I posses self-discipline and rational approach to problem
+                                    solving
+                                    combined with a passion for innovative and fresh ideas. I am also keen to promote a
+                                    healthy
+                                    lifestyle in order to keep and improve my physical or mental health and therefore
+                                    reach my
+                                    full potential.
+
+                                    Currently looking for a part-time opportunity that will allow me to take my career
+                                    to the
+                                    next level and gain even more knowledge.</p>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+                    <section class="sections--2 section">
+                        <div class="section__heading">
+                            <h2>What I do</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="section__main whatIDo">
+                            <div class="whatIDo__item">
+                                <img src="img/icons/about/1.png" alt="icon">
+                                <h3>UX / UI Design</h3>
+                                <p>My concern is to make sure that the product logically flows from one step to the
+                                    next. I
+                                    study how it feels, improving UI and UX until people say “wow, I need it!”.</p>
+                            </div>
+                            <div class="whatIDo__item">
+                                <img src="img/icons/about/2.png" alt="icon">
+                                <h3>Web development</h3>
+                                <p>I’m also a developer, so I know how to create your website to run across devices
+                                    using the
+                                    latest technologies available.</p>
+                            </div>
+                            <div class="whatIDo__item">
+                                <img src="img/icons/about/3.png" alt="icon">
+                                <h3>User Research</h3>
+                                <p>I’m also a developer, so I know how to create your website to run across devices
+                                    using the
+                                    latest technologies available.</p>
+                            </div>
+                            <div class="whatIDo__item">
+                                <img src="img/icons/about/4.png" alt="icon">
+                                <h3>Branding</h3>
+                                <p>What I aim for is creating a unique name and image for a product in the consumers’
+                                    mind with
+                                    a consistent theme.</p>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="sections--3 section">
+                        <div class="section__heading">
+                            <h2>My skills</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="section__main skills">
+                            <div class="design">
+                                <h3>Design</h3>
+                                <div class="skills__grid">
+                                    <div class="skills__grid__row">
+                                        <p>XD</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">90%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>Illustrator</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">70%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>Photoshop</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">60%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>Indesign</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">50%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>Premiere Pro</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">50%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="development">
+                                <h3>Development</h3>
+                                <div class="skills__grid">
+                                    <div class="skills__grid__row">
+                                        <p>HTML / CSS</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">90%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>Javascript</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">60%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>Sass</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">90%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>PHP</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">50%</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <p>Wordpress</p>
+                                        <div class="level">
+                                            <span class="level__full"></span>
+                                            <span class="level__actual"></span>
+                                        </div>
+                                        <p class="percentage">50%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="knowledge">
+                                <h3>Knowledge</h3>
+                                <div class="skills__grid">
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Google Analythics & SEO</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Github</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Web Usability</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Color Theory Knowledge</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Grid & Layout</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personal">
+                                <h3>Personal</h3>
+                                <div class="skills__grid">
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Reliable</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Friendly</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Flexible</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Positive energy</p>
+                                    </div>
+                                    <div class="skills__grid__row">
+                                        <img src="img/icons/about/checkmark.png" alt="checkmark">
+                                        <p>Orghanized</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="sections--4 section">
+                        <div class="section__heading">
+                            <h2>My experience</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="section__main experience">
+                            <div class="row">
+                                <div class="experience__icon">
+                                    <img src="img/icons/about/experience.png" alt="icon">
+                                </div>
+                                <div class="experience__heading">
+                                    <h4>Ecoda</h4>
+                                    <p>September 2019 - Present</p>
+                                </div>
+                                <div class="experience__info">
+                                    <h3>UX / UI Designer - Unpaid Internship</h3>
+                                    <p>My responsibility was to take care of visual presence of a company. The biggest
+                                        part was
+                                        to make new, more modern and responsive website in order to attract more
+                                        potential
+                                        customers as well as make it convenient for existing customers. Besides that,
+                                        I’m taking
+                                        care of design of campaign banners, posters, brand identity and social media
+                                        representation.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="experience__icon">
+                                    <img src="img/icons/about/experience.png" alt="icon">
+                                </div>
+                                <div class="experience__heading">
+                                    <h4>Swept, LLC</h4>
+                                    <p>June 2018 - August 2019</p>
+                                    <!--  <span><img src="img/icons/about/link.png" alt="icon"> <a
+                                            href="http:/www.swept.sk">http:/www.swept.sk</a></span> -->
+                                </div>
+                                <div class="experience__info">
+                                    <h3>Web developer and Graphic Designer</h3>
+                                    <p>My responsibility was to take care of visual presence of a company. The biggest
+                                        part was
+                                        to make new, more modern and responsive website in order to attract more
+                                        potential
+                                        customers as well as make it convenient for existing customers. Besides that,
+                                        I’m taking
+                                        care of design of campaign banners, posters, brand identity and social media
+                                        representation.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="experience__icon">
+                                    <img src="img/icons/about/experience.png" alt="icon">
+                                </div>
+                                <div class="experience__heading">
+                                    <h4>Grammar School</h4>
+                                    <p>September 2017 - June 2018</p>
+                                    <!--    <span><img src="img/icons/about/link.png" alt="icon"> <a
+                                            href="http:/www.srobarka.sk">http:/www.srobarka.sk</a></span> -->
+                                </div>
+                                <div class="experience__info">
+                                    <h3>Web developer</h3>
+                                    <p>Together with my two classmates, we redesigned and developed website of our
+                                        grammar
+                                        school as the old one didn’t have proper digital representation. We helped the
+                                        institution to create better image of our school along with positive experience
+                                        for our
+                                        teachers or students, whether current or potential.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sections--5 section">
+                        <div class="section__heading">
+                            <h2>My education</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="section__main experience">
+                            <div class="row">
+                                <div class="experience__icon">
+                                    <img src="img/icons/about/education.png" alt="icon">
+                                </div>
+                                <div class="experience__heading">
+                                    <p>2018 - Present</p>
+                                </div>
+                                <div class="experience__info">
+                                    <h3>KEA - Copenhagen School
+                                        of Design and Technology</h3>
+                                    <p>AP in Multimedia Design Programme</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="experience__icon">
+                                    <img src="img/icons/about/education.png" alt="icon">
+                                </div>
+                                <div class="experience__heading">
+                                    <p>2014 - 2018</p>
+                                </div>
+                                <div class="experience__info">
+                                    <h3>Grammar School Srobarova Kosice</h3>
+                                    <p>Specialization in I.T.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sections--6 section">
+                        <div class="section__heading">
+                            <h2>My hobbies</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="section__main hobbies">
+                            <div class="hobbie">
+                                <img src="img/icons/hobbies/1.png" alt="hobbies-icon">
+                                <p>Fitness</p>
+                            </div>
+                            <div class="hobbie">
+                                <img src="img/icons/hobbies/2.png" alt="hobbies-icon">
+                                <p>Music</p>
+                            </div>
+                            <div class="hobbie">
+                                <img src="img/icons/hobbies/3.png" alt="hobbies-icon">
+                                <p>Biking</p>
+                            </div>
+                            <div class="hobbie">
+                                <img src="img/icons/hobbies/4.png" alt="hobbies-icon">
+                                <p>Traveling</p>
+                            </div>
+                            <div class="hobbie">
+                                <img src="img/icons/hobbies/5.png" alt="hobbies-icon">
+                                <p>Snowboarding</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sections--7">
+
+                        <h3>I’m currently available for part time job.
+                        </h3>
+                        <p>If you have a project that you want to get started, think you need my help
+                            with something or just fancy saying hey, then get in touch.</p>
+                        <a href="mailto:tomas.soltes98@gmail.com">
+                            <div class="cta_btn">Message me</div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

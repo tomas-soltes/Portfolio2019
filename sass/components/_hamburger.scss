@@ -1,0 +1,132 @@
+.menu {
+
+  &__hamburger {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 5rem;
+    right: 5rem;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    z-index: 10;
+
+    span,
+    span:before,
+    span:after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      transition-duration: 0.3s;
+      background-color: black;
+      border-radius: 0.3rem;
+      background-color: var(--primary-color);
+    }
+
+    span {
+      height: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:before {
+        height: 0.4rem;
+        content: "";
+        top: -1.3rem;
+      }
+
+      &:after {
+        height: 0.4rem;
+        content: "";
+        top: 1rem;
+      }
+    }
+
+    &.open {
+      span {
+        &:before {
+          transform: rotateZ(135deg) scaleX(1.25) translate(0.6rem, -0.8rem);
+          background-color: white;
+        }
+
+        &:after {
+          transform: rotateZ(-135deg) scaleX(1.25) translate(0.7rem, 1rem);
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  &__hamburger:hover {
+    width: 55px;
+    right: 4.5rem;
+  }
+
+  &__content {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--hamburger-menu-color);
+    transition: .3s ease-in-out;
+    clip-path: circle(30px at calc(100% - 65px) 65px);
+    visibility: hidden;
+    z-index: 8;
+
+    &--nav {
+      position: absolute;
+      display: grid;
+      justify-items: center;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+
+      ul {
+        li {
+          font-size: 6rem;
+          font-weight: 600;
+          color: white;
+          list-style: none;
+          padding: 1rem 0;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+
+        li:hover {
+          a {
+            color: rgba(255, 255, 255, 0.63);
+          }
+        }
+      }
+
+      .some {
+        margin-top: 20%;
+        display: grid;
+        align-items: center;
+        width: 55%;
+        padding: 10% 0;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 15%;
+        border-top: 1px solid rgba(230, 230, 230, 0.219);
+
+        a:hover {
+          cursor: pointer;
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}
+
+.menu.active {
+  .menu__content {
+    visibility: visible;
+    clip-path: circle(100%);
+  }
+}

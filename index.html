@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet" />
+    <title>Tomas Soltes - Portfolio 2019</title>
+</head>
+
+<body class="body__index">
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <div class="container container-index">
+                <a href="index.html" class="logo">
+                    <img src="img/logo/logo-red.png" alt="logo" />
+                </a>
+
+                <div class="menu">
+                    <div class="menu__hamburger">
+                        <span></span>
+                    </div>
+
+                    <nav class="menu__content">
+                        <div class="switcher">
+                            <input type="checkbox" id="switch" />
+                            <label for="switch">
+                                <div class="toggle"></div>
+                                <div class="names">
+                                    <p class="light">Light</p>
+                                    <p class="dark">Dark</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="menu__content--nav">
+                            <ul>
+                                <li onclick="goToSlide(1), toggleMenu()"><a>Home</a></li>
+                                <li onclick="goToSlide(3), toggleMenu()"><a>Work</a></li>
+                                <a href="about.html">
+                                    <li onclick="toggleMenu()"><a>About me</a></li>
+                                </a>
+                                <li onclick="goToSlide(8), toggleMenu()"><a>Contact</a></li>
+                            </ul>
+
+                            <div class="some">
+                                <a><img src="img/icons/social/linkedin-white.png" alt="linkedin" /></a>
+                                <a href=""><img src="img/icons/social/facebook-white.png" alt="facebook" /></a>
+                                <a href=""><img src="img/icons/social/instagram-white.png" alt="instagram" /></a>
+                                <a href=""><img src="img/icons/social/github-white.png" alt="github" /></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="dots">
+                    <div onclick="goToSlide(1)" class="dot active">
+                        <p>Intro</p>
+                        <span></span>
+                    </div>
+                    <div onclick="goToSlide(2)" class="dot">
+                        <p>About&nbsp;me</p>
+                        <span></span>
+                    </div>
+                    <div onclick="goToSlide(3)" class="dot">
+                        <p>Work&nbsp;-&nbsp;Swept</p>
+                        <span></span>
+                    </div>
+                    <div onclick="goToSlide(4)" class="dot">
+                        <p>Work&nbsp;-&nbsp;Srobarka</p>
+                        <span></span>
+                    </div>
+                    <div onclick="goToSlide(5)" class="dot">
+                        <p>Work&nbsp;-&nbsp;Anima</p>
+                        <span></span>
+                    </div>
+                    <div onclick="goToSlide(6)" class="dot">
+                        <p>Work&nbsp;-&nbsp;MrKriss</p>
+                        <span></span>
+                    </div>
+                    <div onclick="goToSlide(7)" class="dot">
+                        <p>Work&nbsp;-&nbsp;Swept</p>
+                        <span></span>
+                    </div>
+                    <div onclick="goToSlide(8)" class="dot">
+                        <p>Contact&nbsp;me</p>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="icon-scroll"></div>
+                <div class="container__slides">
+                    <div id="slide1" class="slide1 slide active">
+                        <div class="description">
+                            <p>01&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Intro</p>
+                        </div>
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h1>Hello</h1>
+                                <h2>
+                                    I’m Tomas <br />
+                                    and I study Multimedia design
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide2" class="slide2 slide">
+                        <div class="description">
+                            <p>02&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;About me</p>
+                        </div>
+
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h1>Who?</h1>
+                                <h3>Short description</h3>
+                            </div>
+                            <div class="heading__info">
+                                <h1>Tomas<br />&nbsp;&nbsp;&nbsp;Soltes</h1>
+                            </div>
+                            <div class="slide_main__images">
+                                <img src="img/slide-2/shape.png" alt="shape" />
+                                <img src="img/slide-2/profile.png" alt="desktop" />
+                            </div>
+                            <a href="about.html" onclick="addListeners()">
+                                <div class="cta_btn">Find out more</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="slide3 slide">
+                        <div class="description">
+                            <p>03&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Work</p>
+                        </div>
+
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h2>Swept, LLC</h2>
+                                <div class="line"></div>
+                                <h3>Web development</h3>
+                                <p>Swept is a hardware store established in 1997 that also deals with production and
+                                    sale of sheet metal products and roofing system. My role was to make new, more
+                                    modern and responsive website in order to attract more potential customers as well
+                                    as make it convenient for existing customers and therefore increase the company’s
+                                    profit.</p>
+                            </div>
+                            <div class="slide_main__images">
+                                <img src="img/slide-3/shape.png" alt="shape" />
+                                <img src="img/slide-3/desktop.png" alt="desktop" />
+                                <img src="img/slide-3/mobile.png" alt="mobile" />
+                            </div>
+                            <a href="http://www.swept.sk/">
+                                <div class="cta_btn">Visit site</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="slide4 slide">
+                        <div class="description">
+                            <p>04&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Work</p>
+                        </div>
+
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h2>Grammar School</h2>
+                                <div class="line"></div>
+                                <h3>Web development</h3>
+                            </div>
+                            <div class="slide_main__images">
+                                <img src="img/slide-4/shape.png" alt="shape" />
+                                <img src="img/slide-4/desktop.png" alt="desktop" />
+                            </div>
+                            <a href="http://www.srobarka.sk/">
+                                <div class="cta_btn">Visit site</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="slide5" class="slide5 slide">
+                        <div class="description">
+                            <p>05&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Work</p>
+                        </div>
+
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h2>Anima</h2>
+                                <div class="line"></div>
+                                <h3>Campaign</h3>
+                            </div>
+                            <div class="slide_main__images">
+                                <img src="img/slide-5/shape.png" alt="shape" />
+                                <img src="img/slide-5/desktop.png" alt="desktop" />
+                                <img src="img/slide-5/tablet.png" alt="tablet" />
+                            </div>
+                            <a href="https://tomas-soltes.github.io/Gethooked/">
+                                <div class="cta_btn">Visit site</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="slide6" class="slide6 slide">
+                        <div class="description">
+                            <p>06&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Work</p>
+                        </div>
+
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h2>MrKriss</h2>
+                                <div class="line"></div>
+                                <h3>Online presence</h3>
+                            </div>
+                            <div class="slide_main__images">
+                                <img src="img/slide-6/shape.png" alt="shape" />
+                                <img src="img/slide-6/laptop.png" alt="laptop" />
+                            </div>
+                            <a href="http://tomassoltes.com/MrKriss/">
+                                <div class="cta_btn">Visit site</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="slide7" class="slide7 slide">
+                        <div class="description">
+                            <p>07&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Work</p>
+                        </div>
+
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h2>Swept, LLC</h2>
+                                <div class="line"></div>
+                                <h3>Brand Identity</h3>
+                            </div>
+                            <div class="slide_main__images">
+                                <img src="img/slide-7/shape.png" alt="shape" />
+                                <img src="img/slide-7/car.png" alt="car" />
+                                <img src="img/slide-7/christmas.png" alt="christmas-card" />
+                                <img src="img/slide-7/business.png" alt="business-card" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide8" class="slide8 slide">
+                        <div class="description">
+                            <p>08&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Contact</p>
+                        </div>
+
+                        <div class="slide_main">
+                            <div class="heading">
+                                <h2>Contact</h2>
+                                <div class="line"></div>
+                                <h3>Web development</h3>
+                            </div>
+                            <div class="slide_main__images">
+                                <img src="img/slide-8/shape.png" alt="shape" />
+                                <!-- <img src="img/slide-8/desktop.png" alt="desktop">
+                                <img src="img/slide-8/mobile.png" alt="mobile"> -->
+                            </div>
+                            <a href="swept.html">
+                                <div class="cta_btn">Find out more</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
